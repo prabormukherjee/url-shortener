@@ -1,0 +1,23 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+</head>
+
+<body>
+ 
+     <main>
+        <form class="main-form" action="/shorten" method="POST" >
+
+            <div class="form-control">
+                <label for="lUrl">Long Url</label>
+                <input type="text" name="lUrl" id="lUrl" placeholder="Type the long url here">
+            </div>
+
+            <div class="form-control">
+                <label for="code">Short name</label>
+                <input type="text" name="code" id="code" placeholder="Provide the name you want(optional)">
+            </div>
+
+            <button class="btn" type="submit">Generate</button>
+        </form>
+    </main>
+<%- include('includes/end.ejs') %>

@@ -1,0 +1,12 @@
+<%- include('includes/head.ejs') %>
+</head>
+
+<body>
+    <h1 class="centered">Hurray!!</h1>
+    <% if (msg) { %>
+        <p class="centered"><%= msg %> : <a href="<%= url %>" target="_blank"> <%= url %> </a> </p>
+    <% } else { %>
+        <p class="centered">We have generated this url from your request : <a href="<%= url %>" target="_blank"> <%= url %> </a></p>
+    <% } %>
+
+<%- include('includes/end.ejs') %>
